@@ -1,6 +1,7 @@
 import express from "express";
 import {
   getMatches,
+  getMatchById,
   createMatch,
   updateMatch,
   deleteMatch,
@@ -11,6 +12,7 @@ import checkAuth from "../middleware/check-auth.js";
 const router = express.Router();
 
 router.get("/", getMatches); // public
+router.get("/:mid", getMatchById); // public
 router.post("/", checkAuth, createMatch); // privé
 router.patch("/:mid", checkAuth, updateMatch); // privé
 router.delete("/:mid", checkAuth, deleteMatch); // privé
