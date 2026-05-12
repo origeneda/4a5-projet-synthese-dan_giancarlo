@@ -2,7 +2,6 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 
-import connectDB from "./util/bd.js";
 import authRoutes from "./routes/auth-routes.js";
 import matchesRoutes from "./routes/matches-routes.js";
 import refereesRoutes from "./routes/referees-routes.js";
@@ -23,15 +22,4 @@ app.use((req, res, next) => {
 
 app.use(errorHandler);
 
-const port = process.env.PORT || 5000;
-
-connectDB()
-    .then(() => {
-        app.listen(port, () => {
-            console.log(`Serveur backend actif sur le port ${port}`);
-        });
-    })
-    .catch((error) => {
-        console.error("Impossible de démarrer le backend:", error.message);
-        process.exit(1);
-    });
+export default app;
