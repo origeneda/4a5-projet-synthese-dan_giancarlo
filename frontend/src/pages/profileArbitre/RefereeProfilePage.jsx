@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import RefereeForm from "../../components/RefereeForm.jsx";
-import Shell from "../../components/Shell.jsx";
+import RefereeForm from "../../components/forms/RefereeForm.jsx";
+import Shell from "../../Containers/Shell.jsx";
 import { useAuth } from "../../context/AuthContext.jsx";
 import { useLanguage } from "../../context/LanguageContext.jsx";
 import { getReferees, updateReferee } from "../../services/api.js";

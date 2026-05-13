@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import Shell from "../../components/Shell.jsx";
+import Shell from "../../Containers/Shell.jsx";
 import { useAuth } from "../../context/AuthContext.jsx";
 import { useLanguage } from "../../context/LanguageContext.jsx";
 import { getMatchById, updateMatch } from "../../services/api.js";

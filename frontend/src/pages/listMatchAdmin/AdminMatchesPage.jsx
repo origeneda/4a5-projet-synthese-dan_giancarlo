@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 import MatchCard from "../../components/matchCard/MatchCard.jsx";
-import MatchForm from "../../components/MatchForm.jsx";
-import Shell from "../../components/Shell.jsx";
+import MatchForm from "../../components/forms/MatchForm.jsx";
+import Shell from "../../Containers/Shell.jsx";
 import { useAuth } from "../../context/AuthContext.jsx";
 import { useLanguage } from "../../context/LanguageContext.jsx";
 import {
