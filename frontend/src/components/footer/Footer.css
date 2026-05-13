@@ -1,0 +1,14 @@
+.site-footer {
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.site-footer__line {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+}
