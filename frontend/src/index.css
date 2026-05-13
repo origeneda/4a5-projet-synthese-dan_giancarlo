@@ -22,32 +22,18 @@ textarea {
 }
 
 .shell {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   padding: 20px;
 }
 
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.topbar h1 {
-  margin: 0 0 4px;
-  font-size: 30px;
-}
-
-.topbar-actions {
-  display: flex;
-  gap: 10px;
-}
-
 .page-layout {
+  flex: 1;
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 20px;
+  align-content: start;
 }
 
 .sidebar,
@@ -259,9 +245,5 @@ textarea {
   .toolbar-row {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .topbar {
-    flex-direction: column;
   }
 }
