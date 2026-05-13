@@ -91,7 +91,6 @@ export default function App() {
         }
         path="/submit-result/:matchId"
       />
-
       <Route element={<NotFoundPage />} path="*" />
     </Routes>
   );
