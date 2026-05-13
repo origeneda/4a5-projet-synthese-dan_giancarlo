@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import ProtectedRoute from "./components/ProtectedRoute.jsx";
+import ProtectedRoute from "./Containers/ProtectedRoute.jsx";
 import { useAuth } from "./context/AuthContext.jsx";
 import NotFoundPage from "./Containers/NotFoundPage.jsx";
 import AdminCreateMatchPage from "./pages/creerMatch/AdminCreateMatchPage.jsx";
